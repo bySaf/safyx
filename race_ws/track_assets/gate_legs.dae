@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Split by ChatGPT</author>
+    </contributor>
+    <created>2025-08-30T09:15:06</created>
+    <modified>2025-08-30T09:15:06</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+
+  <library_geometries>
+    <!-- ножка 1 -->
+    <geometry id="body9507Mesh-mesh" name="body9507Mesh">
+      <mesh>
+        <source id="body9507Mesh-mesh-positions">
+          <float_array id="body9507Mesh-mesh-positions-array" count="48">0.92 -0.07999998 -0.16 1 -0.07999998 -0.16 0.92 -0.07999998 0.07999998 1 -0.07999998 0.07999998 0.92 0 -0.16 1 0 -0.16 0.92 0 -0.07999998 1 0 -0.07999998 0.92 0 0 1 0 0 0.92 0 0.07999998 1 0 0.07999998 0.92 1 -0.07999998 1 1 -0.07999998 0.92 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#body9507Mesh-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body9507Mesh-mesh-normals">
+          <float_array id="body9507Mesh-mesh-normals-array" count="21">-1 0 0 -1 7.76102e-7 0 0 0 1 1 0 0 0 0 -1 0 1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#body9507Mesh-mesh-normals-array" count="7" stride="3">
+              <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body9507Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#body9507Mesh-mesh-positions"/>
+        </vertices>
+        <triangles count="28">
+          <input semantic="VERTEX" source="#body9507Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#body9507Mesh-mesh-normals" offset="1"/>
+          <p>6 0 4 0 0 0 2 1 6 1 0 1 10 0 8 0 2 0 8 0 6 0 2 0 8 0 12 0 6 0 14 0 12 0 8 0 9 2 14 2 8 2 15 2 14 2 9 2 5 3 7 3 1 3 7 3 9 3 1 3 9 3 3 3 1 3 9 3 11 3 3 3 13 3 15 3 7 3 15 3 9 3 7 3 12 4 13 4 6 4 13 4 7 4 6 4 14 5 13 5 12 5 14 5 15 5 13 5 7 5 5 5 4 5 6 5 7 5 4 5 10 5 11 5 8 5 11 5 9 5 8 5 3 2 10 2 2 2 11 2 10 2 3 2 5 4 1 4 0 4 4 4 5 4 0 4 3 6 2 6 0 6 1 6 3 6 0 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+
+    <!-- ножка 2 -->
+    <geometry id="body9328Mesh-mesh" name="body9328Mesh">
+      <mesh>
+        <source id="body9328Mesh-mesh-positions">
+          <float_array id="body9328Mesh-mesh-positions-array" count="63">0 -0.07999998 -0.16 0 -0.07999998 -0.16 0.07999998 -0.07999998 -0.16 0 -0.07999998 0.07999998 0 -0.07999998 0.07999998 0.07999998 -0.07999998 0.07999998 0 0 -0.16 0 0 -0.16 0.07999998 0 -0.16 0 0 -0.07999998 0.07999998 0 -0.07999998 0 0 0 0 0 0 0.07999998 0 0 0 0 0.07999998 0 0 0.07999998 0.07999998 0 0.07999998 0 1 -0.07999998 0.07999998 1 -0.07999998 0 1 0 0.07999998 1 0</float_array>
+          <technique_common>
+            <accessor source="#body9328Mesh-mesh-positions-array" count="21" stride="3">
+              <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body9328Mesh-mesh-normals">
+          <float_array id="body9328Mesh-mesh-normals-array" count="18">-1 0 0 0 0 1 1 0 0 0 0 -1 0 1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#body9328Mesh-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body9328Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#body9328Mesh-mesh-positions"/>
+        </vertices>
+        <triangles count="28">
+          <input semantic="VERTEX" source="#body9328Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#body9328Mesh-mesh-normals" offset="1"/>
+          <p>9 0 6 0 0 0 3 0 9 0 0 0 14 0 11 0 3 0 11 0 9 0 3 0 11 0 17 0 9 0 19 0 17 0 11 0 13 1 19 1 11 1 20 1 19 1 13 1 8 2 10 2 2 2 10 2 13 2 2 2 13 2 5 2 2 2 13 2 16 2 5 2 18 2 20 2 10 2 20 2 13 2 10 2 17 3 18 3 9 3 18 3 10 3 9 3 19 4 18 4 17 4 19 4 20 4 18 4 10 4 8 4 6 4 9 4 10 4 6 4 8 3 2 3 0 3 6 3 8 3 0 3 5 1 14 1 3 1 16 1 14 1 5 1 2 5 5 5 0 5 5 5 3 5 0 5 14 4 16 4 11 4 16 4 13 4 11 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+
+  <!-- те же матрицы, чтобы позиционирование совпало с верхом -->
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Gate_001" name="Gate 001" type="NODE">
+        <matrix sid="transform">1 0 0 -0.5 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0.1 0 0 0 1</matrix>
+        <node id="GatesM2" name="GatesM2" type="NODE">
+          <matrix sid="transform">1 0 0 9.99987e-4 0 1 0 0.001000002 0 0 1 0.001 0 0 0 1</matrix>
+          <node id="body9507" name="body9507" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 1.62921e-10 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#body9507Mesh-mesh" name="body9507"/>
+          </node>
+          <node id="body9328" name="body9328" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 1.62921e-10 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#body9328Mesh-mesh" name="body9328"/>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene><instance_visual_scene url="#Scene"/></scene>
+</COLLADA>

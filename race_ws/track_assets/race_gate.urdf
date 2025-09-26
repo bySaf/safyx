@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot name="race_gate">
+
+  <!-- Ножки: статичны, серый цвет -->
+  <link name="legs">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>  <!-- статично -->
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="gate_legs.dae" scale="1 1 1"/></geometry>
+      <material name="legs_mat"><color rgba="0.6 0.6 0.6 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="gate_legs.dae" scale="1 1 1"/></geometry>
+    </collision>
+  </link>
+
+  <!-- Верхняя рамка: отдельно красим (красный) -->
+  <link name="top">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="gate_top.dae" scale="1 1 1"/></geometry>
+      <material name="top_mat"><color rgba="1 0 0.414452 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="gate_top.dae" scale="1 1 1"/></geometry>
+    </collision>
+  </link>
+
+  <!-- Склеиваем без смещений: обе части уже содержат одинаковые трансформации из DAE -->
+  <joint name="top_fixed" type="fixed">
+    <parent link="legs"/>
+    <child link="top"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>
